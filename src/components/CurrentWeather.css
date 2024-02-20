@@ -4,10 +4,10 @@
   border: 1px solid black;
   flex-direction: column;
 }
-.date-and-desc {
+.temp-and-desc {
   display: flex;
 }
-.date-and-desc p {
+.temp-and-desc p {
   margin-left: 22px;
   margin-top: 0;
 }

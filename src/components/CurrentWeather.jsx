@@ -16,12 +16,18 @@ function CurrentWeather() {
   console.log(formattedDate)
   return (
     <div className='current-weather'>
-      <div className='date-and-desc'>
+      <div className='date'>
         <div className='title'>{formattedDate}</div>
-        <div>
-          {desc.map((d) => (
-            <p key={d.id}>{d.description}</p>
-          ))}
+      </div>
+      <div className='temp-and-desc'>
+        <div className='desc'>
+          <p>{desc[0].description}</p>
+        </div>
+
+        <div className='icon'>
+          <img
+            src={`https://openweathermap.org/img/wn/${desc[0].icon}.png`}
+          ></img>
         </div>
       </div>
 
