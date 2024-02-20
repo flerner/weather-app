@@ -1,0 +1,10 @@
+.header-fields {
+  display: flex;
+  flex-direction: column;
+}
+.header-fields button {
+  background-color: bisque;
+  padding: 5px;
+  font-size: 0.8em;
+  margin: 5px;
+}
