@@ -1,13 +1,8 @@
 import "./App.css"
-import SearchBar from "./components/SearchBar.jsx"
-import CurrentWeather from "./components/CurrentWeather.jsx"
+import Weather from "./components/Weather.jsx"
 function App() {
   return (
-    <div className='container'>
-      <SearchBar />
-
-      <CurrentWeather></CurrentWeather>
-    </div>
+    <Weather/>
   )
 }
 

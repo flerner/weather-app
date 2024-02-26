@@ -1,13 +1,56 @@
 .current-weather {
   margin: 0 auto;
   display: flex;
-  border: 1px solid black;
   flex-direction: column;
+  align-items: center;
 }
-.temp-and-desc {
+p {
+  margin: 0;
+}
+.temp h2 {
+  margin: 0 auto;
+  font-size: 60px;
+}
+
+.icon img {
+  width: 100px;
+}
+
+.location p {
+  margin: 0 auto;
+  font-size: x-large;
+}
+
+.humidity-speed {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
 }
-.temp-and-desc p {
-  margin-left: 22px;
-  margin-top: 0;
+.humidity svg {
+  width: 30px;
+  height: 30px;
+}
+.speed svg {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.humidity,
+.speed {
+  display: flex;
+  align-items: center;
+}
+
+.humidity-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.speed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
