@@ -42,12 +42,14 @@ function CurrentWeather() {
             <WiHumidity />
             <p>{humidity}%</p>
           </div>
+          <p>Humidity</p>
         </div>
         <div className="speed-container">
           <div className="speed">
             <FiWind />
             <p>{windSpeed} km/h</p>
           </div>
+          <p>Wind Speed</p>
         </div>
       </div>
     </div>

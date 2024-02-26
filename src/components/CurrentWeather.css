@@ -1,8 +1,9 @@
 .current-weather {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 p {
   margin: 0;
@@ -24,7 +25,7 @@ p {
 .humidity-speed {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 20px;
   align-items: center;
 }
@@ -43,14 +44,20 @@ p {
   display: flex;
   align-items: center;
 }
+.humidity,
+.speed p {
+  font-size: large;
+}
 
 .humidity-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: x-small;
 }
 .speed-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: x-small;
 }
