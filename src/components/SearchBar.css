@@ -1,5 +1,9 @@
 .header-fields {
   display: flex;
+  color: black;
+}
+.input-city {
+  min-width: 201px;
 }
 .header-fields button {
   background-color: bisque;
