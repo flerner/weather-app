@@ -15,7 +15,7 @@ function SearchBar({ onSearchChange }) {
         return {
           options: data.data.map(city => {
             return {
-              value: `${city.latitude} ${city.longitude}`,
+              value: { lat: city.latitude, lon: city.longitude },
               label: `${city.name}, ${city.country}`
             }
           })

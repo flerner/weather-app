@@ -2,9 +2,14 @@ import "./CurrentWeather.css"
 import Data from "../Mockup/example.json"
 import { WiHumidity } from "react-icons/wi";
 import { FiWind } from "react-icons/fi";
+import { useEffect } from "react";
 
 
-function CurrentWeather() {
+function CurrentWeather({ coords }) {
+  console.log(coords.value)
+  useEffect(() => {
+
+  }, [coords])
   const date = new Date(Data.dt * 1000)
   const options = {
     weekday: "long",
