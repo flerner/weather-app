@@ -3,7 +3,7 @@ import CurrentWeather from './CurrentWeather'
 import SearchBar from './SearchBar'
 import './Weather.css'
 function Weather() {
-  const [coords, setCoords] = useState({})
+  const [coords, setCoords] = useState(null)
   const handleOnSearchChange = (searchData) => {
     setCoords(searchData)
   }
@@ -12,7 +12,7 @@ function Weather() {
       <div className="search-bar">
         <SearchBar onSearchChange={handleOnSearchChange} />
       </div>
-      <CurrentWeather coords={coords} />
+      {coords ? <CurrentWeather coords={coords} /> : <CurrentWeather />}
     </div>
   )
 }
